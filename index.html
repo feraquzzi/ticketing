@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Booking Form HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="booking-cta">
+							<h1>Book your flight today</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam at</p>
+						</div>
+					</div>
+					<div class="col-md-7 col-md-offset-1">
+						<div class="booking-form">
+							<form>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">First name</span>
+											<input class="form-control" type="text" placeholder="City or airport" id="fname" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Surname</span>
+											<input class="form-control" type="text" placeholder="City or airport" id="surname" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Email address</span>
+											<input class="form-control" type="email" id="email" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Phone number</span>
+											<input class="form-control" type="number" name="phone" id="phone" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Who is buying</span>
+											<select class="form-control" id="personBuying" required>
+												<option></option>
+												<option value="coach">Coach</option>
+												<option value="guest">Guest</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">If coach, which Hub</span>
+											<select class="form-control" id="hub" required>
+												<option></option>
+												<option value="not a coach">I'm not a coach</option>
+												<option value="mushin hub">Mushin Hub</option>
+												<option value="ikorodu hub">Ikorodu Hub</option>
+												<option value="araromi hub">Araromi Hub</option>
+												<option value="lagos island hub">Lagos Island Hub</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Ticket Type</span>
+											<select class="form-control" id="ticketType" required>
+												<option></option>
+												<option value="platinium">Platinum - 20000</option>
+												<option value="standard">Standard - 10000</option>
+												<option value="regular">Regular - 5000</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Amount paying</span>
+											<select class="form-control" id="amount" required>
+												<option></option>
+												<option value="3000">3000</option>
+												<option value="5000">5000</option>
+												<option value="10000">10000</option>
+												<option value="20000">20000</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+								</div>
+
+								
+								<div class="row">
+									<div class="form-btn col-md-12">
+										<button  onclick="payWithPaystack()" class="submit-btn">Proceed to Payment</button>
+									</div>
+
+								</div>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+	<script src="payment.js"></script>
+	
+</body>
+
+</html>
